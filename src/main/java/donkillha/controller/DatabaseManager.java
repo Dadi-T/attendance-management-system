@@ -68,41 +68,6 @@ public class DatabaseManager {
 
     }
 
-    // public void executeQueryWithoutReturn(String query, String[] variables){
-    // try {
-    // PreparedStatement statement = mysqlConnection.prepareStatement(query);
-
-    // for (int i = 0; i < variables.length; i++) {
-    // statement.setString(i+1, variables[i]);
-    // }
-
-    // statement.executeUpdate();
-
-    // } catch (SQLException e) {
-    // System.err.println(e.getMessage());
-    // }
-
-    // }
-    // public int executeQuery(String query) {
-    //     if (query == null || query.isBlank()) {
-    //         throw new IllegalArgumentException("Query must not be empty/null");
-    //     }
-    //     try {
-    //         Statement statement = mysqlConnection.createStatement();
-
-    //         int result = statement.executeUpdate(query);
-    //         if (result != 0) {
-
-    //             System.err.println("The query :" + query + " ran successfully.");
-
-    //         }
-    //         return result;
-
-    //     } catch (SQLException e) {
-    //         System.err.println(e.getMessage());
-    //     }
-    //     return 0;
-
-    // }
+    
 
 }
