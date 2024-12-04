@@ -55,10 +55,12 @@ public class DatabaseManager {
             if (operationChosen){
                 // It's a SELECT 
                 ResultSet result = statement.getResultSet();
+                System.out.println(query+" has successfully ran");
                 return result;
             }else{
                 // It's UPDATE/INSERT/DELETE operation
                 int result= statement.getUpdateCount();
+                System.out.println(query+" has successfully ran");
                 return result;
             }
         } catch (SQLException e) {

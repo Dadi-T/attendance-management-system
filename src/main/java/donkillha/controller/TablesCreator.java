@@ -30,7 +30,7 @@ public class TablesCreator {
     }
 
     private void createClassesTable() {
-        String queryToCreate = "CREATE TABLE IF NOT EXISTS Classes (`id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,`name` VARCHAR(100) NOT NULL,`teached_by` INT)";
+        String queryToCreate = "CREATE TABLE IF NOT EXISTS Classes (`id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,`class_name` VARCHAR(100) NOT NULL,`teached_by` INT)";
         this.mysql.executeQuery(queryToCreate,null);
         System.out.println("Classes table was successfully created");
     }

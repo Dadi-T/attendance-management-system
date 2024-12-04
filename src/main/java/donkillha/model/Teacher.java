@@ -10,6 +10,16 @@ public class Teacher {
         this.lastName=lastName;
         this.teacherId=teacherId;
     }
+    public Teacher(Teacher teacher){
+        this.firstName=teacher.getFirstName();
+        this.lastName=teacher.getLastName();
+        this.teacherId=teacher.getTeacherId();
+    }
+    public void changeToAnotherTeacher(Teacher teacher){
+        this.firstName=teacher.getFirstName();
+        this.lastName=teacher.getLastName();
+        this.teacherId=teacher.getTeacherId();
+    }
 
     public String getFirstName(){
         return this.firstName;
@@ -19,5 +29,8 @@ public class Teacher {
     }
     public int getTeacherId(){
         return this.teacherId;
+    }
+    public String toString(){
+        return this.firstName + " " +this.lastName;
     }
 }
