@@ -22,15 +22,7 @@ public class App {
         // foreign keys too
         tablesCreator.initialise();
         Admin admin = new Admin(mysql);
-        Student student = new Student("K", "O", 13, 12, 1997, "Computer Science", 27);
-        Teacher johnDoe = new Teacher("John", "Doe", 168473);
-        SchoolClass mathmaticsClass = new SchoolClass("Mathematics", johnDoe);
-        SchoolClass physicsClass = new SchoolClass("Physics", johnDoe);
-        admin.addNewClass("Mathematics", johnDoe);
-        admin.addNewClass("Physics", johnDoe);
-        admin.addStudentToClass(new Student[] { student }, mathmaticsClass);
-        admin.addStudentToClass(new Student[] { student }, physicsClass);
-        admin.removeStudentFromClass(student, mathmaticsClass);
+       
 
     }
 }

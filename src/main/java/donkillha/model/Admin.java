@@ -1,7 +1,6 @@
 package donkillha.model;
 
 import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.util.ArrayList;
 
 import donkillha.controller.DatabaseManager;

@@ -1,5 +1,8 @@
 package donkillha.controller;
 
+// This class creates the tables needed for the project
+
+
 import java.sql.ResultSet;
 
 public class TablesCreator {
@@ -23,7 +26,6 @@ public class TablesCreator {
                 System.out.println("Tables have been checked and they exist");
             }
         } catch (Exception e) {
-            // TODO: handle exception
             System.out.println(e.getMessage());
         }
 

@@ -1,6 +1,6 @@
 package donkillha.model;
 
-import java.util.Arrays;
+
 
 
 
@@ -12,7 +12,6 @@ public class Student {
     private Integer yearOfBirth;
     private String major;
     private Integer studentId;
-    private String[] classes;
 
     public Student(String firstName, String lastName, Integer dayOfBirth, Integer monthOfBirth, Integer yearOfBirth, String major, Integer studentId){
         if(firstName==null || firstName.isBlank()){
